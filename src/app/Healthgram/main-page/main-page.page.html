@@ -1,11 +1,38 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Main Page</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content fullscreen>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
+  <app-card (addCommentEvent)="addCommentEventHandler($event)"></app-card>
+  <app-card (addCommentEvent)="addCommentEventHandler($event)"></app-card>
+  <app-card (addCommentEvent)="addCommentEventHandler($event)"></app-card>
+  <app-card (addCommentEvent)="addCommentEventHandler($event)"></app-card>
 </ion-content>
+<ion-footer class="ion-no-border" *ngIf="ShowGetCommentPanel">
+  <ion-toolbar>
+    <ion-item>
+      <ion-buttons>
+        <ion-button color="primary">
+          <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="primary">
+          <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="primary">
+          <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="primary">
+          <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-avatar class="fz-size-32 fz-m-5">
+          <img src="/assets/Images/Healthgram/Dr.Farzad.jpg">
+        </ion-avatar>
+        <ion-input placeholder="Comment as Dr.Farzad..." (ionBlur)="closeComment()" autofocus="true"></ion-input>
+        <ion-buttons>
+          <ion-button color="primary fz-font-small" >Post</ion-button>
+        </ion-buttons>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-footer>

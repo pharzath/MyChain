@@ -1,0 +1,36 @@
+:root {
+  --ion-color-dark-link: #484848;
+  --ion-color-dark-link-rgb: 72,72,72;
+  --ion-color-dark-link-contrast: #ffffff;
+  --ion-color-dark-link-contrast-rgb: 255,255,255;
+  --ion-color-dark-link-shade: #3f3f3f;
+  --ion-color-dark-link-tint: #5a5a5a;
+}
+
+.ion-color-dark-link {
+  --ion-color-base: var(--ion-color-dark-link);
+  --ion-color-base-rgb: var(--ion-color-dark-link-rgb);
+  --ion-color-contrast: var(--ion-color-dark-link-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-dark-link-contrast-rgb);
+  --ion-color-shade: var(--ion-color-dark-link-shade);
+  --ion-color-tint: var(--ion-color-dark-link-tint);
+}
+
+.fz-mt { margin-top: 8px !important;}
+.fz-mt-0 { margin-top: 0 !important;}
+
+.fz-mb { margin-bottom: 8px !important;}
+.fz-mb-0 { margin-bottom: 0 !important;}
+
+.fz-ml { margin-left: 8px !important;}
+.fz-ml-0 { margin-left: 0 !important;}
+
+.fz-mr { margin-right: 8px !important;}
+.fz-mr-0 { margin-right: 0 !important;}
+
+.fz-m-5 { margin:5px;}
+.fz-size-26 { width: 26px;height: 26px;}
+.fz-size-32 { width: 32px;height: 32px;}
+.fz-size-xsmall { width: 10px;height: 10px;}
+
+.fz-font-small { font-size: smaller !important;}

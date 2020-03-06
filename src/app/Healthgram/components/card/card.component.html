@@ -11,7 +11,7 @@
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button color="dark">
+      <ion-button color="dark" (click)="ShowCardPopover($event)">
         <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -33,20 +33,43 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-row class="ion-margin">
+  <ion-row class="ion-margin fz-mt">
     <div>
-      <ion-label color="dark">23,256 likes</ion-label>
-    </div> 
-    <div class="ion-margin">
-      <ion-label color="medium" class="font-bold">Dr.Farzad </ion-label>
-      <ion-label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab, sit deserunt temporibus architecto
-        dolore
-        saepe aliquam eius error, ipsam qui. Minima perferendis, sint id voluptatibus repudiandae aliquam quidem
+      <ion-label color="dark" class="font-bold">23,256 likes</ion-label>
+    </div>
+    <div class="ion-margin-vertical fz-mt fz-mb-0">
+      <ion-label color="dark" class="font-bold">Dr.Farzad </ion-label>
+      <ion-label color="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab, sit deserunt temporibus
+        architecto
+        dolore aliquam eius error, ipsam qui. Minima perferendis, sint id voluptatibus repudiandae aliquam quidem
         tempora.
       </ion-label>
     </div>
-    <ion-row>
-      <ion-text color="dark">View all 4,342 Comments</ion-text>
+    <ion-row class="fz-mt">
+      <a>
+        <ion-text color="dark-link">View all 4,342 Comments</ion-text>
+      </a>
     </ion-row>
+
+
+    <ion-row>
+      <ion-avatar class="fz-size-26 fz-m-5">
+        <img src="/assets/Images/Healthgram/Dr.Farzad.jpg">
+      </ion-avatar>
+      <ion-input placeholder="Add a comment ..." (ionFocus)="addComment()" readonly></ion-input>
+      <ion-buttons>
+        <ion-button class="fz-size-26">
+          <ion-icon name="heart-circle-outline" color="danger"></ion-icon>
+        </ion-button>
+        <ion-button class="fz-size-26">
+          <ion-icon name="rose-outline" color="danger"></ion-icon>
+        </ion-button>
+        <ion-button class="fz-size-26">
+          <ion-icon name="add-circle-outline" color="dark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-row>
+
+
   </ion-row>
 </ion-card>
